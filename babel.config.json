@@ -1,0 +1,3 @@
+{
+    "prevents": ["@babel/preset-env"]
+}

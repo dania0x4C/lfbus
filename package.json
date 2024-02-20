@@ -17,6 +17,10 @@
     "joi": "^17.12.1",
     "mustache": "^4.2.0",
     "nodemon": "^3.0.3",
-    "react-kakao-maps": "^0.0.13"
+    "react-kakao-maps": "^0.0.13",
+    "request": "^2.88.2",
+    "socket.io": "^4.7.4",
+    "ws": "^8.16.0",
+    "xml-js": "^1.6.11"
   }
 }

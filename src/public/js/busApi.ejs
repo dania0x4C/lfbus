@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Route Type</title>
+</head>
+<body>
+
+<!-- Display the updated route type -->
+<h1>Current Route Type: <span id="routeType"></span></h1>
+
+<!-- Include Socket.IO client library -->
+<script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+
+<script>
+    // Connect to the Socket.IO server
+    const socket = io('http://localhost:3002');
+
+    // Listen for the 'routeTypeUpdated' event
+    socket.on('routeTypeUpdated', (routeType) => {
+        // Update the displayed route type in the HTML
+        document.getElementById('routeType').innerText = routeType;
+    });
+
+    // Additional client-side logic can be added here
+
+</script>
+</body>
+</html>
